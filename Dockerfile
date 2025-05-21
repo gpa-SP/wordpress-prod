@@ -29,7 +29,7 @@ RUN wget https://wordpress.org/latest.tar.gz && \
 
 # Variables de plugins y temas
 #estos siempre se deben poner en la variable themes
-ARG PLUGINS="elementor wpforms-lite wp-stateless-elementor wp-stateless-wpforms header-footer-elementor wp-stateless custom-fonts wordpress-importer all-in-one-wp-migration"
+ARG PLUGINS="elementor wpforms-lite wp-stateless-elementor wp-stateless-wpforms header-footer-elementor wp-stateless custom-fonts wordpress-importer wp-migrate"
 ENV PLUGINS=$PLUGINS
 
 ARG THEMES="astra"
