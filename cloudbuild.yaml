@@ -1,0 +1,29 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/wordpress-repo/wordpress-secure:$BUILD_ID', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/wordpress-repo/wordpress-secure:$BUILD_ID']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      [
+        'run', 'deploy', '${_SERVICE_NAME}',
+        '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/wordpress-repo/wordpress-secure:$BUILD_ID',
+        '--region', '${_REGION}',
+        '--platform', 'managed',
+        '--allow-unauthenticated',
+        '--vpc-connector=run-vpc-connector',
+        '--vpc-egress=private-ranges-only',
+        '--set-env-vars',
+        'DB_HOST=${_SQL_IP},WP_STATELESS_MEDIA_BUCKET=${_BUCKET},WP_STATELESS_MEDIA_MODE=stateless,URL=https://${_SERVICE_NAME}-${_PROJECT_NUMBER}.us-central1.run.app/,USE_WP_URLS=${_USE_URL},PLUGINS=${_PLUGINS},THEMES=${_THEMES}',
+        '--set-secrets',
+        'DB_PASSWORD=DB_PASSWORD:latest',
+        '--service-account=${_DEPLOY_USER}@$PROJECT_ID.iam.gserviceaccount.com'
+      ]
+
+images:
+  - 'us-central1-docker.pkg.dev/$PROJECT_ID/wordpress-repo/wordpress-secure:$BUILD_ID'
