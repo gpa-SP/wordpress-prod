@@ -28,6 +28,7 @@ RUN wget https://wordpress.org/latest.tar.gz && \
     rm latest.tar.gz
 
 # Variables de plugins y temas
+## testing backup apps
 #estos siempre se deben poner en la variable themes
 ARG PLUGINS="elementor wpforms-lite wp-stateless-elementor wp-stateless-wpforms header-footer-elementor wp-stateless custom-fonts wordpress-importer wp-migrate"
 ENV PLUGINS=$PLUGINS
