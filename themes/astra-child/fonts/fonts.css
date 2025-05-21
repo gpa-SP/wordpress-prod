@@ -1,0 +1,143 @@
+/* Lato Regular */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url('Lato Regular.ttf') format('truetype');
+}
+
+/* Lato Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  src: url('Lato Italic.ttf') format('truetype');
+}
+
+/* Lato Light */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: normal;
+  src: url('Lato Light.ttf') format('truetype');
+}
+
+/* Lato Light Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+  src: url('Lato Light Italic.ttf') format('truetype');
+}
+
+/* Lato Bold */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: url('Lato Bold.ttf') format('truetype');
+}
+
+/* Lato Bold Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: italic;
+  src: url('Lato Bold Italic.ttf') format('truetype');
+}
+
+/* Lato Hairline */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+  src: url('Lato Hairline.ttf') format('truetype');
+}
+
+/* Lato Hairline Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: italic;
+  src: url('Lato Hairline Italic.ttf') format('truetype');
+}
+
+/* Lato Medium */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: normal;
+  src: url('Lato Medium.ttf') format('truetype');
+}
+
+/* Lato Medium Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: italic;
+  src: url('Lato Medium Italic.ttf') format('truetype');
+}
+
+/* Lato Semibold */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: normal;
+  src: url('Lato Semibold.ttf') format('truetype');
+}
+
+/* Lato Semibold Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: italic;
+  src: url('Lato Semibold Italic.ttf') format('truetype');
+}
+
+/* Lato Thin */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  font-style: normal;
+  src: url('Lato Thin.ttf') format('truetype');
+}
+
+/* Lato Thin Italic */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  font-style: italic;
+  src: url('Lato Thin Italic.ttf') format('truetype');
+}
+
+/* HWT Artz Regular */
+@font-face {
+  font-family: 'HWT Artz';
+  font-weight: 400;
+  font-style: normal;
+  src: url('HWT Artz Regular.ttf') format('truetype');
+}
+
+/* Zooja Elements and Borders Regular */
+@font-face {
+  font-family: 'Zooja';
+  font-weight: 400;
+  font-style: normal;
+  src: url('Zooja Elements and Borders Regular.ttf') format('truetype');
+}
+
+/* Zooja Light Pro Regular */
+@font-face {
+  font-family: 'Zooja';
+  font-weight: 300;
+  font-style: normal;
+  src: url('Zooja Light Pro Regular.ttf') format('truetype');
+}
+
+/* Zooja Pro Regular */
+@font-face {
+  font-family: 'Zooja';
+  font-weight: 700;
+  font-style: normal;
+  src: url('Zooja Pro Regular.ttf') format('truetype');
+}
