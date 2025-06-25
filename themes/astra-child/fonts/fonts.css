@@ -141,3 +141,27 @@
   font-style: normal;
   src: url('Zooja Pro Regular.ttf') format('truetype');
 }
+
+/* Puffin Display Soft Bold */
+@font-face {
+  font-family: 'Puffin Display Soft';
+  font-weight: 400;
+  font-style: normal;
+  src: url('Puffin Display Soft Bold.ttf') format('truetype');
+}
+
+/* Puffin Display Soft Regular */
+@font-face {
+  font-family: 'Puffin Display Soft';
+  font-weight: 700;
+  font-style: normal;
+  src: url('Puffin Display Soft Regular.ttf') format('truetype');
+}
+
+/* Puffin Display Soft SemiBold */
+@font-face {
+  font-family: 'Puffin Display Soft';
+  font-weight: 600;
+  font-style: normal;
+  src: url('Puffin Display Soft SemiBold.ttf') format('truetype');
+}
